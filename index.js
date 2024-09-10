@@ -1,11 +1,10 @@
 function myFunction(){
-    event.preventDefault()
     var a= parseInt(document.getElementById('se1').value);
     var b= parseInt(document.getElementById('se2').value);
-    var c= parseInt(document.getElementById('select').value);
+    var value= parseInt(document.getElementById('select').value);
     var k;
     var type;
-    switch (c){
+    switch (value){
         case 1:
             k=parseFloat(a+b*2)/3;
             break;
