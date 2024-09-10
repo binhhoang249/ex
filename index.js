@@ -3,7 +3,7 @@ function myFunction(){
     var b= parseInt(document.getElementById('se2').value);
     var value= parseInt(document.getElementById('select').value);
     var k;
-    var type;
+    var greeting;
     switch (value){
         case 1:
             k=parseFloat(a+b*2)/3;
@@ -16,25 +16,25 @@ function myFunction(){
             break;
     }
     if (k>=9){
-        type="Xuất sắc"
+        greeting="Xuất sắc"
         document.getElementById('demo').style.color = "red";
     } else if(k>=8){
-        type="Giỏi"
+        greeting="Giỏi"
         document.getElementById('demo').style.color = "blue";
     }else if(k>=6.5){
-        type="Khá"
+        greeting="Khá"
         document.getElementById('demo').style.color = "green";
-    }else if (k>=3.5){
-        type="Trung bình"
+    }else if (k>=5){
+        greeting="Trung bình"
         document.getElementById('demo').style.color = "black";
     }else{
-        type="Yếu"
+        greeting="Yếu"
         document.getElementById('demo').style.color = "gray";
     }
     document.getElementById('kq').value = k;
-    document.getElementById('demo').innerHTML =type;
+    document.getElementById('demo').innerHTML = greeting;
 }
-function myFunction2 (){
-    document.getElementById('se1').value =" ";
-    document.getElementById('se2').value =" ";
-}
+    function myFunction2 (){
+        document.getElementById('se1').value =" ";
+        document.getElementById('se2').value =" ";
+    }
